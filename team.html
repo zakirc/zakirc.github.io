@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team — CT Resources Ltd</title>
+    <meta name="description" content="Team — CT Resources Ltd." />
+
+    <!-- Favicon / tab icon -->
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <meta name="theme-color" content="#0b0d12" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Team-only overrides (does NOT affect other pages) -->
+    <style>
+      /* Show full face in different photo shapes without breaking other pages */
+      .team-photo {
+        height: 320px;              /* consistent image area */
+        object-fit: contain;        /* no cropping */
+        object-position: center;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 14px;              /* makes "contain" look intentional */
+      }
+
+      /* Slightly smaller on mobile */
+      @media (max-width: 920px) {
+        .team-photo { height: 260px; padding: 12px; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="CT Resources Ltd Home">
+          <!-- Logo 175% (36px -> 63px) -->
+          <img class="brand-logo" src="logo.png" alt="CT Resources Ltd logo" style="height: 63px;" />
+          <span class="brand-name">CT Resources Ltd</span>
+        </a>
+
+        <nav class="links" id="navLinks" aria-label="Primary">
+          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-expanded="false"
+          aria-controls="navLinks"
+          aria-label="Open menu"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 style="margin: 0 0 10px;">Team</h1>
+          <p class="muted" style="max-width: 75ch;">
+            A small, focused team working across R&amp;D, security-led product development, and long-term IP value creation.
+          </p>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img class="team-photo" src="zakir.jpg" alt="Zakir Chowdhury photo" />
+              <div class="team-body">
+                <h3>Zakir Chowdhury</h3>
+                <p>
+                  Technical lead focused on applied R&amp;D, product strategy, and building secure, deployment-ready
+                  solutions. Drives IP creation and commercialization while overseeing delivery and partnerships.
+                </p>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <img class="team-photo" src="towhid.jpg" alt="Towhid photo" />
+              <div class="team-body">
+                <h3>Towhid</h3>
+                <p>
+                  Works across engineering, sourcing, and implementation support—helping translate research outcomes into practical
+                  systems. Focused on reliability, security considerations, and execution quality.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <a class="btn" href="mailto:zakirc@gmail.com?subject=Enquiry%20-%20CT%20Resources%20Ltd">Get in touch</a>
+            <a class="btn ghost" href="index.html">Back to Home</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> CT Resources Ltd</span>
+        <span class="muted">Hosted on GitHub Pages</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — CT Resources Ltd</title>
+    <meta name="description" content="Projects — CT Resources Ltd." />
+
+    <!-- Favicon / tab icon -->
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <meta name="theme-color" content="#0b0d12" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="CT Resources Ltd Home">
+          <!-- Logo 175% (36px -> 63px) -->
+          <img class="brand-logo" src="logo.png" alt="CT Resources Ltd logo" style="height: 63px;" />
+          <span class="brand-name">CT Resources Ltd</span>
+        </a>
+
+        <nav class="links" id="navLinks" aria-label="Primary">
+          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-expanded="false"
+          aria-controls="navLinks"
+          aria-label="Open menu"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 style="margin: 0 0 10px;">Projects</h1>
+          <p class="muted" style="max-width: 75ch;">
+            Selected initiatives representing our focus on applied R&amp;D, security-led innovation, and long-term IP value.
+          </p>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <img class="project-photo" src="manta.jpg" alt="Project MANTA image" />
+              <div class="project-body">
+                <h3>Project MANTA</h3>
+                <p>
+                  An applied R&amp;D initiative focused on secure, next-generation capabilities—designed for practical deployment and
+                  long-term IP creation. MANTA explores concepts, prototypes, and validated pathways from research to real-world use.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img class="project-photo" src="gzru.jpg" alt="Project GZRU image" />
+              <div class="project-body">
+                <h3>Project GZRU</h3>
+                <p>
+                  A security and product innovation track aimed at deployment-ready solutions. GZRU brings together engineering,
+                  supply execution, and robust implementation to deliver reliable systems that meet real operational needs.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <a class="btn" href="mailto:zakirc@gmail.com?subject=Website%20Enquiry%20-%20CT%20Resources%20Ltd">Get in touch</a>
+            <a class="btn ghost" href="index.html">Back to Home</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> CT Resources Ltd</span>
+        <span class="muted">Hosted on GitHub Pages</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
